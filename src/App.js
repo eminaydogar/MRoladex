@@ -21,13 +21,14 @@ class App extends React.Component {
 
     }
 
-handleChange = (e)=> {
-  this.setState({searchField:e.target.value});
-}
+    handleChange = (e)=> {
+      this.setState({searchField:e.target.value});
+    }
 
+    
   render(){
 
-   const {monsters,searchField} =this.state;
+    const {monsters,searchField} =this.state;
     // const monsters = this.state.monsters ve const searchField = this.state.searchField
 const filteredMonsters= monsters.filter(
 
